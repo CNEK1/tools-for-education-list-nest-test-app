@@ -11,15 +11,20 @@
 	gap: 20px;
 }
 
+.firstLevelList {
+	padding: 0;
+
+	list-style: none;
+}
 
 .firstLevelActive,
 .firstLevel:hover {
-	color: black;
+	color: var(--primary);
 }
 
 .firstLevelActive svg,
 .firstLevel:hover svg {
-	fill: black;
+	fill: var(--primary);
 }
 
 .secondLevel {
@@ -44,10 +49,18 @@
 	margin-left: 12px;
 	padding: 0 0 0 32px;
 
-	list-style: none;
 
-	border-left: 5px solid black;
+	border-left: 1px solid black;
 }
+.secondLevelBlock{
+	display: none;
+}
+.secondLevelBlockOpened{
+	margin-left: 15px;
+	display: block;
+	
+}
+
 
 .secondLevelBlock {
 	overflow: hidden;
